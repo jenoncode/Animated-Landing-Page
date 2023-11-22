@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
+    <title>Bliss T-Shirts Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-store"></i>
+                <h1>Bliss T-Shirts</h1>
+            </div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Abut</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <div class="div-text">
+                <span>Outfit of The Day</span>
+                <h3>Styles are here</h3>
+                <p>Brand new eco-friendly t-shirts made from Egyptian cotton
+                   are here to make it feel smooth against your skin.
+                </p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+
+            <div class="div-img"> 
+                <img src="images/dark pink T-Shirt.png" alt="">
+            </div>
+            <div class="small-img">
+                <img onclick="myTshirt(this.src)" src="images/Yellow T-Shirt.png" alt="">
+                <img onclick="myTshirt(this.src)" src="images/Blue t-shirt.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        let bigImage = document.getElementById('big-img');
+
+        function myTshirt(shirt){
+            bigImage.src = shirt
+        }
+    </script>
+</body>
+</html>
